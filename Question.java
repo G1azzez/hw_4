@@ -5,13 +5,18 @@ public class Question {
     private String[] options;
     private int rightAnsw;
 
-    public Question() {
-    }
-
     public Question(String question, String[] options, int rightAnsw) {
         this.question = question;
         this.options = options;
         this.rightAnsw = rightAnsw;
+    }
+
+    public Question(String question) {
+        this.question = question;
+    }
+
+    public Question() {
+
     }
 
     public String getQuestion() {
@@ -37,6 +42,4 @@ public class Question {
     public void setRightAnsw(int rightAnsw) {
         this.rightAnsw = rightAnsw;
     }
-
-
 }
